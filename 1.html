@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anniversary Surprise 🎥</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #ffe3c3, #f7b267);
+      color: #5a3d0c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px 15px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #a75300;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      font-style: italic;
+      color: #5f3e00;
+    }
+
+    .video-container {
+      width: 100%;
+      max-width: 360px;
+      aspect-ratio: 9/16;
+      border: 4px solid #d69400;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back-button {
+      margin-top: 25px;
+      background: #a75300;
+      color: white;
+      border: none;
+      padding: 10px 24px;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 5px 12px #995c00;
+      transition: background 0.3s ease;
+    }
+
+    .back-button:hover {
+      background: #7c3e00;
+    }
+
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .video-container {
+        max-width: 100%;
+        border: 3px solid #d69400;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Here's a Special Surprise 💖</h1>
+  <p>For the most amazing Mummy & Papa — this video is a token of our love and gratitude!</p>
+
+  <div class="video-container">
+    <video controls autoplay muted playsinline>
+      <source src="v.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <button class="back-button" onclick="window.location.href='index.html'">Go Back</button>
+</body>
+</html>
